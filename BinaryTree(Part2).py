@@ -94,10 +94,25 @@ class BinarySearchTreeNode:
 
 # Defining a Build Tree as a Helper Method
 def build_tree(elements):
-    print("\n\tBuilding tree with these elements:",elements)
+    print("\nBuilding tree with these elements:",elements)
     root = BinarySearchTreeNode(elements[0])
 
     for i in range(1,len(elements)):
         root.add_child(elements[i])
 
     return root
+
+if __name__ == '__main__':
+    # Adding the Given Numbers    
+    numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
+    numbers_tree.delete(20)
+    # this should print [1, 4, 9, 17, 18, 23, 34]
+    print("After deleting 20:", numbers_tree.in_order_traversal())  
+    numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
+    numbers_tree.delete(9)
+    # this should print [1, 4, 17, 18, 20, 23, 34]
+    print("After deleting 9:", numbers_tree.in_order_traversal())  
+    numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
+    numbers_tree.delete(17)
+    # this should print [1, 4, 9, 18, 20, 23, 34]
+    print("After deleting 17:", numbers_tree.in_order_traversal())
