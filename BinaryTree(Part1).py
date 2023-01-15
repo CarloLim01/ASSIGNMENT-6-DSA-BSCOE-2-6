@@ -118,22 +118,42 @@ def build_tree(elements):
 
 if __name__ == '__main__':
     # Adding the Given Numbers
+    print("\nNUMBERS:")
+    
     numbers = [17, 4, 1, 20, 9, 23, 18, 34]
+
     numbers_tree = build_tree(numbers)
-    print("Input numbers:",numbers)
-    print("Maximum Element:",numbers_tree.find_max())
-    print("Minimum Element:",numbers_tree.find_min())
-    print("Sum of All Elements:", numbers_tree.calculate_sum())
-    print("In order traversal:", numbers_tree.in_order_traversal())
-    print("Pre order traversal:", numbers_tree.pre_order_traversal())
-    print("Post order traversal:", numbers_tree.post_order_traversal())
+    
+    print("\n\tInput numbers:",numbers)
+    
+    print("\n\tMaximum Element:",numbers_tree.find_max())
+    
+    print("\n\tMinimum Element:",numbers_tree.find_min())
+    
+    print("\n\tSum of All Elements:", numbers_tree.calculate_sum())
+    
+    print("\n\tIn order traversal:", numbers_tree.in_order_traversal())
+    
+    print("\n\tPre order traversal:", numbers_tree.pre_order_traversal())
+    
+    print("\n\tPost order traversal:", numbers_tree.post_order_traversal())
+    
     
     # Adding My Full Name
+    print("\n\nMY FULL NAME:")
+    
     Name = ["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"]
+
     MyFullName = build_tree(Name)
-    print("Input lName:",Name)
-    print("Maximum Element:",MyFullName.find_max())
-    print("Minimum Element:",MyFullName.find_min())
-    print("In order traversal:", MyFullName.in_order_traversal())
-    print("Pre order traversal:", MyFullName.pre_order_traversal())
-    print("Post order traversal:", MyFullName.post_order_traversal())
+    
+    print("\n\tInput lName:",Name)
+    
+    print("\n\tMaximum Element:",MyFullName.find_max())
+    
+    print("\n\tMinimum Element:",MyFullName.find_min())
+    
+    print("\n\tIn order traversal:", MyFullName.in_order_traversal())
+    
+    print("\n\tPre order traversal:", MyFullName.pre_order_traversal())
+    
+    print("\n\tPost order traversal:", MyFullName.post_order_traversal())
