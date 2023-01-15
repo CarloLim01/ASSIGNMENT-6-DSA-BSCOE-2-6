@@ -127,3 +127,13 @@ if __name__ == '__main__':
     print("In order traversal:", numbers_tree.in_order_traversal())
     print("Pre order traversal:", numbers_tree.pre_order_traversal())
     print("Post order traversal:", numbers_tree.post_order_traversal())
+    
+    # Adding My Full Name
+    Name = ["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"]
+    MyFullName = build_tree(Name)
+    print("Input lName:",Name)
+    print("Maximum Element:",MyFullName.find_max())
+    print("Minimum Element:",MyFullName.find_min())
+    print("In order traversal:", MyFullName.in_order_traversal())
+    print("Pre order traversal:", MyFullName.pre_order_traversal())
+    print("Post order traversal:", MyFullName.post_order_traversal())
