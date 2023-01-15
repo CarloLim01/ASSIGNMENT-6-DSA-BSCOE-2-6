@@ -94,7 +94,7 @@ class BinarySearchTreeNode:
 
 # Defining a Build Tree as a Helper Method
 def build_tree(elements):
-    print("\nBuilding tree with these elements:",elements)
+    print("\n\tBuilding tree with these elements:",elements)
     root = BinarySearchTreeNode(elements[0])
 
     for i in range(1,len(elements)):
@@ -103,27 +103,36 @@ def build_tree(elements):
     return root
 
 if __name__ == '__main__':
-    # Adding the Given Numbers    
+    # Adding the Given Numbers
+    print("\nNUMBERS:")
+    
     numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
     numbers_tree.delete(20)
     # this should print [1, 4, 9, 17, 18, 23, 34]
-    print("After deleting 20:", numbers_tree.in_order_traversal())  
+    print("\tAfter deleting 20:", numbers_tree.in_order_traversal()) 
+    
     numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
     numbers_tree.delete(9)
     # this should print [1, 4, 17, 18, 20, 23, 34]
-    print("After deleting 9:", numbers_tree.in_order_traversal())  
+    print("\tAfter deleting 9:", numbers_tree.in_order_traversal())  
+
     numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
     numbers_tree.delete(17)
     # this should print [1, 4, 9, 18, 20, 23, 34]
-    print("After deleting 17:", numbers_tree.in_order_traversal())
+    print("\tAfter deleting 17:", numbers_tree.in_order_traversal())  
     
     # Adding My Full Name
+    print("\n\nMY FULL NAME:")
+    
     MyFullName = build_tree(["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"])
     MyFullName.delete("B")
-    print("After deleting B:", MyFullName.in_order_traversal())
+    print("\tAfter deleting B:", MyFullName.in_order_traversal())
+    
     MyFullName = build_tree(["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"])
     MyFullName.delete("C")
-    print("After deleting C:", MyFullName.in_order_traversal())
+    print("\tAfter deleting C:", MyFullName.in_order_traversal())
+    
     MyFullName = build_tree(["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"])
     MyFullName.delete("I")
-    print("After deleting I:", MyFullName.in_order_traversal())
+    print("\tAfter deleting I:", MyFullName.in_order_traversal())
+    
