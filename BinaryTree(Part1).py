@@ -78,6 +78,12 @@ class BinarySearchTreeNode:
             return self.data
         return self.right.find_max()
     
+    # Finding the Minimum Element
+    def find_min(self):
+        if self.left is None:
+            return self.data
+        return self.left.find_min()
+    
     # Defining a Search Method
     def search(self, val):
         if self.data == val:
