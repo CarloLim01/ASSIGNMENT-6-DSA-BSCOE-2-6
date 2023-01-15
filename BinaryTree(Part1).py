@@ -72,6 +72,12 @@ class BinarySearchTreeNode:
 
         return elements
     
+    # Finding the Maximum Element
+    def find_max(self):
+        if self.right is None:
+            return self.data
+        return self.right.find_max()
+    
     # Defining a Search Method
     def search(self, val):
         if self.data == val:
