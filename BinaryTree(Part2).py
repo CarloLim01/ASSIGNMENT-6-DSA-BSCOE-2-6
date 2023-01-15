@@ -74,3 +74,30 @@ class BinarySearchTreeNode:
             self.left = self.left.delete(max_val)
 
         return self
+
+    # Defining a Search Method
+    def search(self, val):
+        if self.data == val:
+            return True
+
+        if val < self.data:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+
+        if val > self.data:
+            if self.right:
+                return self.right.search(val)
+            else:
+                return False
+
+# Defining a Build Tree as a Helper Method
+def build_tree(elements):
+    print("\n\tBuilding tree with these elements:",elements)
+    root = BinarySearchTreeNode(elements[0])
+
+    for i in range(1,len(elements)):
+        root.add_child(elements[i])
+
+    return root
