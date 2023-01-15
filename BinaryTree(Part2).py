@@ -116,3 +116,14 @@ if __name__ == '__main__':
     numbers_tree.delete(17)
     # this should print [1, 4, 9, 18, 20, 23, 34]
     print("After deleting 17:", numbers_tree.in_order_traversal())
+    
+    # Adding My Full Name
+    MyFullName = build_tree(["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"])
+    MyFullName.delete("B")
+    print("After deleting B:", MyFullName.in_order_traversal())
+    MyFullName = build_tree(["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"])
+    MyFullName.delete("C")
+    print("After deleting C:", MyFullName.in_order_traversal())
+    MyFullName = build_tree(["A","L","B","E","R","T", "C","A","R","L","O", "L","I","M"])
+    MyFullName.delete("I")
+    print("After deleting I:", MyFullName.in_order_traversal())
